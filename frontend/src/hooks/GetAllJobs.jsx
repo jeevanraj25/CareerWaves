@@ -15,7 +15,7 @@ const GetAllJobs = () => {
             
              try {
                 
-                const res =await axios.get(`${JOB_API_PONIT}/get?keyword=${searchedQuery}`,{
+                const res =await axios.get(`${JOB_API_PONIT}/get`,{
                     withCredentials:true
                 });
                 if(res.data.success){
