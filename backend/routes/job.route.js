@@ -6,7 +6,7 @@ import { getAdminJobs, getAllJobs, getJobById, PostJob } from "../controllers/jo
 const router =express.Router();
 
 router.post("/post", isAuth,PostJob);
-router.get("/get", isAuth,getAllJobs);
+router.get("/get",getAllJobs);
 router.get("/get/:id", isAuth,getJobById );
 router.get("/getadmin", isAuth,getAdminJobs);
 
